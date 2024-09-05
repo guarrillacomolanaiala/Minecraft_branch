@@ -1,0 +1,198 @@
+---- Minecraft Crash Report ----
+// I just don't know what went wrong :(
+
+Time: 2024-08-31 18:01:19 UTC
+Description: Exception in server tick loop
+
+java.lang.NoClassDefFoundError: net/minecraft/world/chunk/Chunk
+    at java.lang.Class.getDeclaredConstructors0(Native Method)
+    at java.lang.Class.privateGetDeclaredConstructors(Class.java:2671)
+    at java.lang.Class.getConstructor0(Class.java:3075)
+    at java.lang.Class.getConstructor(Class.java:1825)
+    at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:128)
+    at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:112)
+    at thedarkcolour.futuremc.event.Events.<clinit>(Events.kt:82)
+    at thedarkcolour.futuremc.FutureMC.<clinit>(FutureMC.kt:92)
+    at java.lang.Class.forName0(Native Method)
+    at java.lang.Class.forName(Class.java:348)
+    at net.minecraftforge.fml.common.FMLModContainer.constructMod(FMLModContainer.java:539)
+    at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:498)
+    at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+    at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+    at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+    at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+    at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+    at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+    at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+    at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:219)
+    at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:197)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:498)
+    at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+    at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+    at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+    at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+    at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+    at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+    at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+    at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:136)
+    at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:595)
+    at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:98)
+    at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333)
+    at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:125)
+    at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+    at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.ClassNotFoundException: net.minecraft.world.chunk.Chunk
+    at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+    at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+    at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+    ... 41 more
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+    at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:373)
+    at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:227)
+    at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:195)
+    at org.spongepowered.asm.mixin.transformer.Proxy.transform(Proxy.java:72)
+    at net.minecraft.launchwrapper.LaunchClassLoader.runTransformers(LaunchClassLoader.java:279)
+    at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:176)
+    ... 43 more
+Caused by: org.spongepowered.asm.mixin.injection.throwables.InjectionError: Critical injection failure: Variable modifier method setBlockStateInjectGenerateSkylightMapVanilla(Z)Z in mixins.phosphor.json:common.MixinChunk$Vanilla failed injection check, (0/1) succeeded. Scanned 1 target(s). Using refmap mixins.phosphor.refmap.json
+    at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.postInject(InjectionInfo.java:468)
+    at org.spongepowered.asm.mixin.transformer.MixinTargetContext.applyInjections(MixinTargetContext.java:1358)
+    at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyInjections(MixinApplicatorStandard.java:1073)
+    at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:398)
+    at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:321)
+    at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:345)
+    at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:573)
+    at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:361)
+    ... 48 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+  Minecraft Version: 1.12.2
+  Operating System: Linux (amd64) version 6.5.0-1022-azure
+  Java Version: 1.8.0_412, Private Build
+  Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Private Build
+  Memory: 2407552192 bytes (2296 MB) / 3219128320 bytes (3070 MB) up to 11453595648 bytes (10923 MB)
+  JVM Flags: 2 total; -Xms2G -Xmx12G
+  IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+  FML: MCP 9.42 Powered by Forge 14.23.5.2859 67 mods loaded, 67 mods active
+       States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+       
+       | State | ID                     | Version               | Source                                                | Signature                                |
+       |:----- |:---------------------- |:--------------------- |:----------------------------------------------------- |:---------------------------------------- |
+       | LC    | minecraft              | 1.12.2                | minecraft.jar                                         | None                                     |
+       | LC    | mcp                    | 9.42                  | minecraft.jar                                         | None                                     |
+       | LC    | FML                    | 8.0.99.99             | forge-1.12.2-14.23.5.2859.jar                         | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+       | LC    | forge                  | 14.23.5.2859          | forge-1.12.2-14.23.5.2859.jar                         | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+       | LC    | creativecoredummy      | 1.0.0                 | minecraft.jar                                         | None                                     |
+       | LC    | itemphysic             | 1.4.0                 | minecraft.jar                                         | None                                     |
+       | LC    | lesslag                | 1.0                   | minecraft.jar                                         | None                                     |
+       | LC    | randompatches          | 1.12.2-1.22.1.10      | randompatches-1.12.2-1.22.1.10.jar                    | None                                     |
+       | LC    | securitycraft          | v1.9.10.1             | [1.12.2] SecurityCraft v1.9.10.1.jar                  | None                                     |
+       | LC    | supermartijn642corelib | 1.1.17                | _supermartijn642corelib-1.1.17-forge-mc1.12.jar       | None                                     |
+       | LC    | biomesoplenty          | 7.0.1.2445            | BiomesOPlenty-1.12.2-7.0.1.2445-universal.jar         | None                                     |
+       | LC    | craftstudioapi         | 1.0.0                 | CraftStudioAPI-universal-1.0.1.95-mc1.12-alpha.jar    | None                                     |
+       | LC    | twilightforest         | 3.11.1021             | twilightforest-1.12.2-3.11.1021-universal.jar         | None                                     |
+       | LC    | animania               | 2.0.3.28              | animania-1.12.2-base-2.0.3.28.jar                     | None                                     |
+       | LC    | bookworm               | 1.12.2-2.5.2.1        | bookworm-1.12.2-2.5.2.1.jar                           | None                                     |
+       | LC    | camocreepers           | 1.2.0                 | CamoCreepers-1.12.2-1.2.0.jar                         | None                                     |
+       | LC    | cat                    | 0.1                   | CavesAndDungeonsMod.jar                               | None                                     |
+       | LC    | caves_and_cliffs       | 1.0.9                 | CC(FG1.12.2) 1.0.9.jar                                | None                                     |
+       | LC    | jei                    | 4.16.1.1012           | jei_1.12.2-4.16.1.1012.jar                            | None                                     |
+       | LC    | chisel                 | MC1.12.2-1.0.2.45     | Chisel-MC1.12.2-1.0.2.45.jar                          | None                                     |
+       | LC    | clearlag               | 1.1                   | Clear-Lag-ReworkV1.1.jar                              | None                                     |
+       | LC    | lagremoval             | 1.0                   | clearlag-1.0.jar                                      | None                                     |
+       | LC    | morpheus               | 1.12.2-3.5.106        | Morpheus-1.12.2-3.5.106.jar                           | None                                     |
+       | LC    | comforts               | 1.4.1.3               | comforts-1.12.2-1.4.1.3.jar                           | 2484ef4d131fdc0dca0647aa21b7b944ddb935a1 |
+       | LC    | craftingstation        | @VERSION@             | craftingstation-0.1.8a.jar                            | None                                     |
+       | LC    | creativecore           | 1.10.0                | CreativeCore_v1.10.71_mc1.12.2.jar                    | None                                     |
+       | LC    | props                  | 2.6.3.7               | Decocraft-2.6.3.7_1.12.2.jar                          | None                                     |
+       | LC    | dynamictrees           | 1.12.2-0.9.29         | DynamicTrees-1.12.2-0.9.29.jar                        | None                                     |
+       | LC    | eleccore               | 1.9.453               | ElecCore-1.12.2-1.9.453.jar                           | None                                     |
+       | LC    | elevatorid             | 1.3.14                | ElevatorMod-1.12.2-1.3.14.jar                         | None                                     |
+       | LC    | experiencebugfix       | 1.0.0.0               | ExperienceBugFix-1.12.2-1.0.0.0.jar                   | None                                     |
+       | LC    | fencejumper            | 1.0.5                 | fencejumper-1.12-1.0.5.jar                            | None                                     |
+       | LC    | foamflower             | 1.12.2-1.0.0.0-beta1  | foamflower-1.12.2-1.0.0.0-beta1.jar                   | None                                     |
+       | LC    | forgelin               | 1.8.4                 | Forgelin-1.8.4.jar                                    | None                                     |
+       | L     | futuremc               | 0.2.6                 | Future-MC-0.2.19.jar                                  | None                                     |
+       | L     | geckolib3              | 3.0.30                | geckolib-forge-1.12.2-3.0.31.jar                      | None                                     |
+       | L     | globalxp               | v1.4.10               | globalxp-1.12.2-v1.4.10.jar                           | None                                     |
+       | L     | gottschcore            | 1.15.0                | GottschCore-mc1.12.2-f14.23.5.2859-v1.15.0.jar        | None                                     |
+       | L     | waila                  | 1.8.26                | Hwyla-1.8.26-B41_1.12.2.jar                           | None                                     |
+       | L     | llibrary               | 1.7.20                | llibrary-1.7.20-1.12.2.jar                            | None                                     |
+       | L     | iceandfire             | 1.9.1                 | iceandfire-1.9.1-1.12.2.jar                           | None                                     |
+       | L     | ichunutil              | 7.2.2                 | iChunUtil-1.12.2-7.2.2.jar                            | None                                     |
+       | L     | journeymap             | 1.12.2-5.7.1p3        | journeymap-1.12.2-5.7.1p3.jar                         | None                                     |
+       | L     | jeid                   | 1.0.4-SNAPSHOT        | JustEnoughIDs-1.0.4-SNAPSHOT-thin.jar                 | None                                     |
+       | L     | malisiscore            | 1.12.2-6.5.1-SNAPSHOT | malisiscore-1.12.2-6.5.1.jar                          | None                                     |
+       | L     | malisisdoors           | 1.12.2-7.3.0          | malisisdoors-1.12.2-7.3.0.jar                         | None                                     |
+       | L     | mca                    | 6.1.0                 | MCA-Español-1.12.2.jar                                | None                                     |
+       | L     | mcjtylib_ng            | 3.5.4                 | mcjtylib-1.12-3.5.4.jar                               | None                                     |
+       | L     | minetraps              | 1.0.4                 | MineTraps-1.12.2-(v.1.0.4).jar                        | None                                     |
+       | L     | mowziesmobs            | 1.5.8                 | mowziesmobs_1.12.2_1.5.8.jar                          | None                                     |
+       | L     | msic                   | 1.0                   | MyServerIsCompatible-1.12.2-1.0.jar                   | None                                     |
+       | L     | placebo                | 1.6.0                 | Placebo-1.12.2-1.6.0.jar                              | None                                     |
+       | L     | playerrevive           | 1.0                   | PlayerRevive_v1.2.40_mc1.12.2.jar                     | None                                     |
+       | L     | roost                  | 2.0.10                | roost-1.12.2-2.0.10.jar                               | None                                     |
+       | L     | spark                  | 1.6.3                 | spark-forge.jar                                       | None                                     |
+       | L     | tombstone              | 4.6.8                 | tombstone-1.12.2-4.6.8.jar                            | None                                     |
+       | L     | trashcans              | 1.0.18                | trashcans-1.0.18-forge-mc1.12.jar                     | None                                     |
+       | L     | uteamcore              | 2.2.5.292             | u_team_core-forge-1.12.2-2.2.5.292.jar                | None                                     |
+       | L     | vanillafix             | 1.0.10-150            | VanillaFix-1.0.10-150.jar                             | None                                     |
+       | L     | vending                | 1.12.2-3.0.0.0        | Vending-Block-1.12.2.jar                              | None                                     |
+       | L     | voicechat              | 1.12.2-2.5.19         | voicechat-forge-1.12.2-2.5.19.jar                     | None                                     |
+       | L     | wolfarmor              | 3.8.0                 | WolfArmorAndStorage-1.12.2-3.8.0-universal-signed.jar | None                                     |
+       | L     | zawa                   | 1.12.2-2.1.3          | zawa-1.12.2-2.1.3.jar                                 | None                                     |
+       | L     | phosphor-lighting      | 1.12.2-0.2.6          | phosphor-1.12.2-0.2.6+build50-universal.jar           | None                                     |
+       | L     | betteranimalsplus      | 9.0.1                 | betteranimalsplus-1.12.2-9.0.1.jar                    | None                                     |
+       | L     | shetiphiancore         | 3.5.9                 | shetiphiancore-1.12.0-3.5.9.jar                       | None                                     |
+       | L     | eleccoreloader         | 1.9.453               | ElecCore-1.12.2-1.9.453.jar                           | None                                     |
+  Loaded coremods (and transformers): WolfArmorCore (WolfArmorAndStorage-1.12.2-3.8.0-universal-signed.jar)
+                                        
+                                      MSICCoreMod (MyServerIsCompatible-1.12.2-1.0.jar)
+                                        
+                                      RandomPatches (randompatches-1.12.2-1.22.1.10.jar)
+                                        com.therandomlabs.randompatches.core.RPTransformer
+                                      LoadingPlugin (ChunkAnimator-1.12.2-1.2.1.jar)
+                                        lumien.chunkanimator.asm.ClassTransformer
+                                      ForgelinPlugin (Forgelin-1.8.4.jar)
+                                        
+                                      ItemPatchingLoader (ItemPhysic_Full_1.4.37_mc1.12.2.jar)
+                                        com.creativemd.itemphysic.ItemTransformer
+                                      FutureMC (Future-MC-0.2.19.jar)
+                                        thedarkcolour.futuremc.asm.CoreTransformer
+                                      LesslagCorePlugin (lesslag-1.0-1.12.2.jar)
+                                        
+                                      iceandfire (iceandfire-1.9.1-1.12.2.jar)
+                                        com.github.alexthe666.iceandfire.patcher.IceAndFireRuntimePatcher
+                                      CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+                                        team.chisel.ctm.client.asm.CTMTransformer
+                                      llibrary (llibrary-core-1.0.11-1.12.2.jar)
+                                        net.ilexiconn.llibrary.server.core.plugin.LLibraryTransformer
+                                        net.ilexiconn.llibrary.server.core.patcher.LLibraryRuntimePatcher
+                                      ShetiPhian-ASM (ShetiPhian-ASM-1.12.0.jar)
+                                        shetiphian.asm.ClassTransformer
+                                      CreativePatchingLoader (CreativeCore_v1.10.71_mc1.12.2.jar)
+                                        
+                                      VanillaFixLoadingPlugin (VanillaFix-1.0.10-150.jar)
+                                        
+                                      PhosphorFMLLoadingPlugin (phosphor-1.12.2-0.2.6+build50-universal.jar)
+                                        
+                                      JustEnoughIDs Extension Plugin (JustEnoughIDs-1.0.4-SNAPSHOT-thin.jar)
+                                        org.dimdev.jeid.JEIDTransformer
+                                      MalisisCorePlugin (malisiscore-1.12.2-6.5.1.jar)
+                                        
+                                      SecurityCraftLoadingPlugin ([1.12.2] SecurityCraft v1.9.10.1.jar)
+                                        
+                                      SuperMartijn642's Core Lib Plugin (_supermartijn642corelib-1.1.17-forge-mc1.12.jar)
+  Suspected Mods: Future MC (futuremc)
+  Profiler Position: N/A (disabled)
+  Is Modded: Definitely; Server brand changed to 'fml,forge'
+  Type: Dedicated Server (map_server.txt)

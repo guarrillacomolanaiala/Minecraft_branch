@@ -1,0 +1,144 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  WolfArmorCore (WolfArmorAndStorage-1.12.2-3.8.0-universal-signed.jar)
+  MSICCoreMod (MyServerIsCompatible-1.12.2-1.0.jar)
+  ForgelinPlugin (Forgelin-1.8.4.jar)
+  ItemPatchingLoader (ItemPhysic_Full_1.4.37_mc1.12.2.jar)
+  FutureMC (Future-MC-0.2.19.jar)
+  iceandfire (iceandfire-1.9.1-1.12.2.jar)
+  CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+  llibrary (llibrary-core-1.0.11-1.12.2.jar)
+  ShetiPhian-ASM (ShetiPhian-ASM-1.12.0.jar)
+  CreativePatchingLoader (CreativeCore_v1.10.71_mc1.12.2.jar)
+  JustEnoughIDs Extension Plugin (JustEnoughIDs-1.0.4-SNAPSHOT-thin.jar)
+  MalisisCorePlugin (malisiscore-1.12.2-6.5.1.jar)
+  SecurityCraftLoadingPlugin ([1.12.2] SecurityCraft v1.9.10.1.jar)
+  SuperMartijn642's Core Lib Plugin (_supermartijn642corelib-1.1.17-forge-mc1.12.jar)
+Contact their authors BEFORE contacting forge
+
+// Everything's going to plan. No, really, that was supposed to happen.
+
+Time: 8/2/24 8:16 PM
+Description: Exception in server tick loop
+
+Missing Mods:
+	unknown : need any: have missing
+
+net.minecraftforge.fml.common.MissingModsException: Mod vending (Vending) requires [foamflower]
+	at net.minecraftforge.fml.common.Loader.sortModList(Loader.java:266)
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:572)
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:98)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:125)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Linux (amd64) version 6.5.0-1022-azure
+	Java Version: 1.8.0_412, Private Build
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Private Build
+	Memory: 1492214552 bytes (1423 MB) / 2687500288 bytes (2563 MB) up to 11453595648 bytes (10923 MB)
+	JVM Flags: 2 total; -Xms2G -Xmx12G
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2859 56 mods loaded, 56 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID                     | Version               | Source                                                | Signature                                |
+	|:----- |:---------------------- |:--------------------- |:----------------------------------------------------- |:---------------------------------------- |
+	| L     | minecraft              | 1.12.2                | minecraft.jar                                         | None                                     |
+	| L     | mcp                    | 9.42                  | minecraft.jar                                         | None                                     |
+	| L     | FML                    | 8.0.99.99             | forge-1.12.2-14.23.5.2859.jar                         | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| L     | forge                  | 14.23.5.2859          | forge-1.12.2-14.23.5.2859.jar                         | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| L     | creativecoredummy      | 1.0.0                 | minecraft.jar                                         | None                                     |
+	| L     | itemphysic             | 1.4.0                 | minecraft.jar                                         | None                                     |
+	| L     | securitycraft          | v1.9.10.1             | [1.12.2] SecurityCraft v1.9.10.1.jar                  | None                                     |
+	| L     | supermartijn642corelib | 1.1.17                | _supermartijn642corelib-1.1.17-forge-mc1.12.jar       | None                                     |
+	| L     | animania               | 2.0.3.28              | animania-1.12.2-base-2.0.3.28.jar                     | None                                     |
+	| L     | biomesoplenty          | 7.0.1.2445            | BiomesOPlenty-1.12.2-7.0.1.2445-universal.jar         | None                                     |
+	| L     | bookworm               | 1.12.2-2.5.2.1        | bookworm-1.12.2-2.5.2.1.jar                           | None                                     |
+	| L     | camocreepers           | 1.2.0                 | CamoCreepers-1.12.2-1.2.0.jar                         | None                                     |
+	| L     | cat                    | 0.1                   | CavesAndDungeonsMod.jar                               | None                                     |
+	| L     | caves_and_cliffs       | 1.0.9                 | CC(FG1.12.2) 1.0.9.jar                                | None                                     |
+	| L     | chisel                 | MC1.12.2-1.0.2.45     | Chisel-MC1.12.2-1.0.2.45.jar                          | None                                     |
+	| L     | comforts               | 1.4.1.3               | comforts-1.12.2-1.4.1.3.jar                           | None                                     |
+	| L     | craftingstation        | @VERSION@             | craftingstation-0.1.8a.jar                            | None                                     |
+	| L     | craftstudioapi         | 1.0.0                 | CraftStudioAPI-universal-1.0.1.95-mc1.12-alpha.jar    | None                                     |
+	| L     | creativecore           | 1.10.0                | CreativeCore_v1.10.71_mc1.12.2.jar                    | None                                     |
+	| L     | props                  | 2.6.3.7               | Decocraft-2.6.3.7_1.12.2.jar                          | None                                     |
+	| L     | dynamictrees           | 1.12.2-0.9.29         | DynamicTrees-1.12.2-0.9.29.jar                        | None                                     |
+	| L     | eleccoreloader         | 1.9.453               | ElecCore-1.12.2-1.9.453.jar                           | None                                     |
+	| L     | eleccore               | 1.9.453               | ElecCore-1.12.2-1.9.453.jar                           | None                                     |
+	| L     | elevatorid             | 1.3.14                | ElevatorMod-1.12.2-1.3.14.jar                         | None                                     |
+	| L     | fencejumper            | 1.0.5                 | fencejumper-1.12-1.0.5.jar                            | None                                     |
+	| L     | forgelin               | 1.8.4                 | Forgelin-1.8.4.jar                                    | None                                     |
+	| L     | futuremc               | 0.2.6                 | Future-MC-0.2.19.jar                                  | None                                     |
+	| L     | geckolib3              | 3.0.30                | geckolib-forge-1.12.2-3.0.31.jar                      | None                                     |
+	| L     | globalxp               | v1.4.10               | globalxp-1.12.2-v1.4.10.jar                           | None                                     |
+	| L     | gottschcore            | 1.15.0                | GottschCore-mc1.12.2-f14.23.5.2859-v1.15.0.jar        | None                                     |
+	| L     | waila                  | 1.8.26                | Hwyla-1.8.26-B41_1.12.2.jar                           | None                                     |
+	| L     | iceandfire             | 1.9.1                 | iceandfire-1.9.1-1.12.2.jar                           | None                                     |
+	| L     | ichunutil              | 7.2.2                 | iChunUtil-1.12.2-7.2.2.jar                            | None                                     |
+	| L     | jei                    | 4.16.1.1012           | jei_1.12.2-4.16.1.1012.jar                            | None                                     |
+	| L     | journeymap             | 1.12.2-5.7.1p3        | journeymap-1.12.2-5.7.1p3.jar                         | None                                     |
+	| L     | jeid                   | 1.0.4-SNAPSHOT        | JustEnoughIDs-1.0.4-SNAPSHOT-thin.jar                 | None                                     |
+	| L     | malisiscore            | 1.12.2-6.5.1-SNAPSHOT | malisiscore-1.12.2-6.5.1.jar                          | None                                     |
+	| L     | malisisdoors           | 1.12.2-7.3.0          | malisisdoors-1.12.2-7.3.0.jar                         | None                                     |
+	| L     | mca                    | 6.1.0                 | MCA-Español-1.12.2.jar                                | None                                     |
+	| L     | mcjtylib_ng            | 3.5.4                 | mcjtylib-1.12-3.5.4.jar                               | None                                     |
+	| L     | minetraps              | 1.0.4                 | MineTraps-1.12.2-(v.1.0.4).jar                        | None                                     |
+	| L     | morpheus               | 1.12.2-3.5.106        | Morpheus-1.12.2-3.5.106.jar                           | None                                     |
+	| L     | mowziesmobs            | 1.5.8                 | mowziesmobs_1.12.2_1.5.8.jar                          | None                                     |
+	| L     | msic                   | 1.0                   | MyServerIsCompatible-1.12.2-1.0.jar                   | None                                     |
+	| L     | playerrevive           | 1.0                   | PlayerRevive_v1.2.40_mc1.12.2.jar                     | None                                     |
+	| L     | roost                  | 2.0.10                | roost-1.12.2-2.0.10.jar                               | None                                     |
+	| L     | tombstone              | 4.6.8                 | tombstone-1.12.2-4.6.8.jar                            | None                                     |
+	| L     | trashcans              | 1.0.18                | trashcans-1.0.18-forge-mc1.12.jar                     | None                                     |
+	| L     | twilightforest         | 3.11.1021             | twilightforest-1.12.2-3.11.1021-universal.jar         | None                                     |
+	| L     | uteamcore              | 2.2.5.292             | u_team_core-forge-1.12.2-2.2.5.292.jar                | None                                     |
+	| L     | vending                | 1.12.2-3.0.0.0        | Vending-Block-1.12.2.jar                              | None                                     |
+	| L     | wolfarmor              | 3.8.0                 | WolfArmorAndStorage-1.12.2-3.8.0-universal-signed.jar | None                                     |
+	| L     | zawa                   | 1.12.2-2.1.3          | zawa-1.12.2-2.1.3.jar                                 | None                                     |
+	| L     | betteranimalsplus      | 9.0.1                 | betteranimalsplus-1.12.2-9.0.1.jar                    | None                                     |
+	| L     | shetiphiancore         | 3.5.9                 | shetiphiancore-1.12.0-3.5.9.jar                       | None                                     |
+	| L     | llibrary               | 1.7.20                | llibrary-1.7.20-1.12.2.jar                            | None                                     |
+
+	Loaded coremods (and transformers): 
+WolfArmorCore (WolfArmorAndStorage-1.12.2-3.8.0-universal-signed.jar)
+  
+MSICCoreMod (MyServerIsCompatible-1.12.2-1.0.jar)
+  
+ForgelinPlugin (Forgelin-1.8.4.jar)
+  
+ItemPatchingLoader (ItemPhysic_Full_1.4.37_mc1.12.2.jar)
+  com.creativemd.itemphysic.ItemTransformer
+FutureMC (Future-MC-0.2.19.jar)
+  thedarkcolour.futuremc.asm.CoreTransformer
+iceandfire (iceandfire-1.9.1-1.12.2.jar)
+  com.github.alexthe666.iceandfire.patcher.IceAndFireRuntimePatcher
+CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+  team.chisel.ctm.client.asm.CTMTransformer
+llibrary (llibrary-core-1.0.11-1.12.2.jar)
+  net.ilexiconn.llibrary.server.core.plugin.LLibraryTransformer
+  net.ilexiconn.llibrary.server.core.patcher.LLibraryRuntimePatcher
+ShetiPhian-ASM (ShetiPhian-ASM-1.12.0.jar)
+  shetiphian.asm.ClassTransformer
+CreativePatchingLoader (CreativeCore_v1.10.71_mc1.12.2.jar)
+  
+JustEnoughIDs Extension Plugin (JustEnoughIDs-1.0.4-SNAPSHOT-thin.jar)
+  org.dimdev.jeid.JEIDTransformer
+MalisisCorePlugin (malisiscore-1.12.2-6.5.1.jar)
+  
+SecurityCraftLoadingPlugin ([1.12.2] SecurityCraft v1.9.10.1.jar)
+  
+SuperMartijn642's Core Lib Plugin (_supermartijn642corelib-1.1.17-forge-mc1.12.jar)
+  
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)

@@ -1,0 +1,20 @@
+[
+  {
+    "uuid": "fb8b44e3-0699-35d0-940d-4eebbb09fa5b",
+    "name": "PechugaPollo",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "659d6ead-9f87-3750-bbff-122c79eef0ee",
+    "name": "pechugpollo",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "b9549fbd-cb0e-32a3-ab48-405585a8e8e3",
+    "name": "TheRocheXD",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]
