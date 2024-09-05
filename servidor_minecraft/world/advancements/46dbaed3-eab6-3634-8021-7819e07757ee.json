@@ -246,6 +246,18 @@
     },
     "done": true
   },
+  "dungeontactics:recipes/misc/convenience/string_from_wool": {
+    "criteria": {
+      "has_string": "2024-09-05 19:48:53 +0000"
+    },
+    "done": true
+  },
+  "dungeontactics:recipes/weapons/golden_weapons": {
+    "criteria": {
+      "has_item": "2024-09-05 19:56:06 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/detector_rail": {
     "criteria": {
       "has_rail": "2024-08-01 22:49:28 +0000"
@@ -691,9 +703,21 @@
     },
     "done": true
   },
+  "dungeontactics:recipes/weapons/slingshot": {
+    "criteria": {
+      "has_item": "2024-09-05 19:48:53 +0000"
+    },
+    "done": true
+  },
   "wolfarmor:recipes/combat/gold_wolf_armor": {
     "criteria": {
       "has_the_item": "2024-07-22 14:40:19 +0000"
+    },
+    "done": true
+  },
+  "dungeontactics:recipes/armour/golden_plate_armour": {
+    "criteria": {
+      "has_item": "2024-09-05 19:56:06 +0000"
     },
     "done": true
   },
@@ -928,6 +952,12 @@
   "minecraft:recipes/tools/golden_axe": {
     "criteria": {
       "has_gold_ingot": "2024-08-02 18:15:30 +0000"
+    },
+    "done": true
+  },
+  "dungeontactics:recipes/tools/climbing_rope": {
+    "criteria": {
+      "has_item": "2024-09-05 19:48:53 +0000"
     },
     "done": true
   },
@@ -1495,6 +1525,12 @@
     },
     "done": true
   },
+  "dungeontactics:recipes/tools/alchemical_cauldron": {
+    "criteria": {
+      "has_ingot": "2024-09-05 19:56:06 +0000"
+    },
+    "done": true
+  },
   "trashcans:recipes/energy_trash_can": {
     "criteria": {
       "recipe_condition": "2024-08-01 21:18:14 +0000"
@@ -1528,6 +1564,12 @@
   "minecraft:recipes/building_blocks/diorite": {
     "criteria": {
       "has_quartz": "2024-08-03 14:53:52 +0000"
+    },
+    "done": true
+  },
+  "dungeontactics:recipes/tools/magic_tether": {
+    "criteria": {
+      "has_pearl": "2024-09-05 19:48:22 +0000"
     },
     "done": true
   },
