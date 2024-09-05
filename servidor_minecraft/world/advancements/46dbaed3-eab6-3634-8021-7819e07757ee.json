@@ -5,6 +5,12 @@
     },
     "done": true
   },
+  "dungeontactics:recipes/misc/convenience/planks_from_sticks": {
+    "criteria": {
+      "has_stick": "2024-09-05 19:00:54 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/purple_stained_glass_pane": {
     "criteria": {
       "has_glass": "2024-08-02 17:27:41 +0000"
@@ -14,6 +20,12 @@
   "minecraft:recipes/building_blocks/black_stained_glass": {
     "criteria": {
       "has_glass": "2024-08-02 00:11:55 +0000"
+    },
+    "done": true
+  },
+  "dungeontactics:recipes/weapons/stone_weapons": {
+    "criteria": {
+      "has_item": "2024-09-05 19:00:54 +0000"
     },
     "done": true
   },
@@ -56,6 +68,13 @@
   "minecraft:recipes/redstone/spruce_door": {
     "criteria": {
       "has_planks": "2024-09-03 17:13:24 +0000"
+    },
+    "done": true
+  },
+  "dungeontactics:recipes/misc/convenience/sticks_from_cactus": {
+    "criteria": {
+      "has_cactus": "2024-09-05 19:00:54 +0000",
+      "has_stick": "2024-09-05 19:00:54 +0000"
     },
     "done": true
   },
@@ -311,6 +330,12 @@
     },
     "done": true
   },
+  "mutantbeasts:root": {
+    "criteria": {
+      "killed_something": "2024-09-05 19:02:08 +0000"
+    },
+    "done": true
+  },
   "biomesoplenty:recipes/transportation/boat_mangrove": {
     "criteria": {
       "entered_water": "2024-08-01 21:21:07 +0000"
@@ -332,6 +357,12 @@
   "minecraft:recipes/misc/lime_dye": {
     "criteria": {
       "has_bonemeal": "2024-08-01 22:21:33 +0000"
+    },
+    "done": true
+  },
+  "dungeontactics:dungeoneering/root": {
+    "criteria": {
+      "kill": "2024-09-05 19:02:08 +0000"
     },
     "done": true
   },
@@ -666,6 +697,12 @@
     },
     "done": true
   },
+  "dungeontactics:recipes/misc/ration": {
+    "criteria": {
+      "has_item": "2024-09-05 19:00:54 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/brewing/blaze_powder": {
     "criteria": {
       "has_blaze_rod": "2024-08-03 14:51:59 +0000"
@@ -948,6 +985,12 @@
     },
     "done": true
   },
+  "dungeontactics:recipes/tools/bagofhoarding": {
+    "criteria": {
+      "has_item": "2024-09-05 19:00:54 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/black_concrete_powder": {
     "criteria": {
       "has_sand": "2024-08-01 21:39:06 +0000"
@@ -1002,6 +1045,13 @@
     },
     "done": true
   },
+  "dungeontactics:dungeoneering/born_survivor": {
+    "criteria": {
+      "stab": "2024-09-05 19:00:54 +0000",
+      "cherrybomb": "2024-09-05 19:02:12 +0000"
+    },
+    "done": false
+  },
   "twilightforest:alt/treasures/fiery_tool_set": {
     "criteria": {
       "sword": "2024-09-03 16:14:39 +0000"
@@ -1053,6 +1103,12 @@
   "minecraft:recipes/tools/golden_pickaxe": {
     "criteria": {
       "has_gold_ingot": "2024-08-02 18:15:30 +0000"
+    },
+    "done": true
+  },
+  "dungeontactics:recipes/misc/lantern_iron": {
+    "criteria": {
+      "has_torch": "2024-09-05 19:00:54 +0000"
     },
     "done": true
   },
@@ -1227,6 +1283,12 @@
     },
     "done": true
   },
+  "dungeontactics:recipes/armour/stone_plate_armour": {
+    "criteria": {
+      "has_item": "2024-09-05 19:00:54 +0000"
+    },
+    "done": true
+  },
   "biomesoplenty:recipes/misc/mud_from_dirt": {
     "criteria": {
       "has_gem_block": "2024-08-02 15:56:12 +0000"
@@ -1396,6 +1458,13 @@
     },
     "done": true
   },
+  "dungeontactics:recipes/misc/wooden_chair": {
+    "criteria": {
+      "has_recipe": "2024-09-05 19:00:54 +0000",
+      "has_wood": "2024-09-05 19:00:54 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/diamond_sword": {
     "criteria": {
       "has_diamond": "2024-08-02 16:51:17 +0000"
@@ -1429,6 +1498,12 @@
   "minecraft:recipes/decorations/sign": {
     "criteria": {
       "has_planks": "2024-08-01 21:27:05 +0000"
+    },
+    "done": true
+  },
+  "dungeontactics:recipes/misc/wooden_table": {
+    "criteria": {
+      "has_wood": "2024-09-05 19:00:54 +0000"
     },
     "done": true
   },
@@ -1656,6 +1731,12 @@
   "minecraft:story/mine_stone": {
     "criteria": {
       "get_stone": "2024-07-22 15:06:21 +0000"
+    },
+    "done": true
+  },
+  "dungeontactics:recipes/misc/brazier": {
+    "criteria": {
+      "has_torch": "2024-09-05 19:00:54 +0000"
     },
     "done": true
   },
@@ -2194,6 +2275,12 @@
     },
     "done": true
   },
+  "dungeontactics:recipes/weapons/wooden_weapons": {
+    "criteria": {
+      "has_item": "2024-09-05 19:00:54 +0000"
+    },
+    "done": true
+  },
   "minecraft:story/form_obsidian": {
     "criteria": {
       "obsidian": "2024-08-02 16:53:20 +0000"
@@ -2209,6 +2296,12 @@
   "minecraft:recipes/brewing/brewing_stand": {
     "criteria": {
       "has_blaze_rod": "2024-08-03 14:51:59 +0000"
+    },
+    "done": true
+  },
+  "dungeontactics:recipes/tools/fire_starter": {
+    "criteria": {
+      "has_item": "2024-09-05 19:00:54 +0000"
     },
     "done": true
   },
@@ -2305,6 +2398,12 @@
   "minecraft:recipes/building_blocks/birch_stairs": {
     "criteria": {
       "has_planks": "2024-08-01 21:27:05 +0000"
+    },
+    "done": true
+  },
+  "dungeontactics:recipes/misc/convenience/sticks_from_saplings": {
+    "criteria": {
+      "has_stick": "2024-09-05 19:00:54 +0000"
     },
     "done": true
   },

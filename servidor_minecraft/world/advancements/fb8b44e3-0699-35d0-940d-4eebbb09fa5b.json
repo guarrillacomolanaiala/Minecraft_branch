@@ -23,6 +23,12 @@
     },
     "done": true
   },
+  "dungeontactics:recipes/weapons/stone_weapons": {
+    "criteria": {
+      "has_item": "2024-09-05 19:02:41 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/lever": {
     "criteria": {
       "has_cobblestone": "2024-07-22 15:06:21 +0000"
@@ -1566,6 +1572,12 @@
     },
     "done": true
   },
+  "dungeontactics:recipes/armour/stone_plate_armour": {
+    "criteria": {
+      "has_item": "2024-09-05 19:02:41 +0000"
+    },
+    "done": true
+  },
   "biomesoplenty:recipes/misc/mud_from_dirt": {
     "criteria": {
       "has_gem_block": "2024-07-25 00:01:35 +0000"
@@ -2158,6 +2170,12 @@
     },
     "done": true
   },
+  "dungeontactics:recipes/armour/iron_plate_armour": {
+    "criteria": {
+      "has_item": "2024-09-05 19:01:43 +0000"
+    },
+    "done": true
+  },
   "trashcans:trash_can": {
     "criteria": {
       "has_item_trash_can": "2024-07-25 11:23:55 +0000"
@@ -2688,6 +2706,12 @@
     },
     "done": true
   },
+  "dungeontactics:recipes/misc/ironlinks": {
+    "criteria": {
+      "has_ingot": "2024-09-05 19:01:43 +0000"
+    },
+    "done": true
+  },
   "dungeontactics:recipes/weapons/potshot": {
     "criteria": {
       "has_gunpowder": "2024-09-05 16:40:55 +0000"
@@ -3025,6 +3049,12 @@
     },
     "done": true
   },
+  "dungeontactics:recipes/weapons/iron_weapons": {
+    "criteria": {
+      "has_item": "2024-09-05 19:01:43 +0000"
+    },
+    "done": true
+  },
   "twilightforest:alt/entities/lich_zombies": {
     "criteria": {
       "hurt_alt": "2024-07-25 14:54:47 +0000"
@@ -3161,6 +3191,12 @@
     "criteria": {
       "previous_progression": "2024-07-25 14:55:11 +0000",
       "yeti": "2024-08-02 00:05:25 +0000"
+    },
+    "done": true
+  },
+  "dungeontactics:recipes/armour/studded_armour": {
+    "criteria": {
+      "has_item": "2024-09-05 19:01:43 +0000"
     },
     "done": true
   },
