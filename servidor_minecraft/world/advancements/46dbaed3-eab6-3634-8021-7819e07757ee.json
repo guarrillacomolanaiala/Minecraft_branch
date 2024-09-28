@@ -667,6 +667,12 @@
     },
     "done": true
   },
+  "iceandfire:iceandfire/kill_myrmex": {
+    "criteria": {
+      "desert": "2024-09-05 20:01:07 +0000"
+    },
+    "done": true
+  },
   "iceandfire:iceandfire/kill_troll": {
     "criteria": {
       "killed_fire_dragon": "2024-08-02 18:51:43 +0000"
@@ -1470,6 +1476,12 @@
     },
     "done": true
   },
+  "dungeontactics:recipes/misc/convenience/flint_from_gravel": {
+    "criteria": {
+      "has_gravel": "2024-09-05 20:17:12 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/lime_stained_glass_pane": {
     "criteria": {
       "has_glass": "2024-08-02 17:27:41 +0000"
@@ -1743,6 +1755,12 @@
   "minecraft:recipes/building_blocks/purple_concrete_powder": {
     "criteria": {
       "has_sand": "2024-08-01 21:39:06 +0000"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/myrmex_resin": {
+    "criteria": {
+      "jungle": "2024-09-05 20:01:25 +0000"
     },
     "done": true
   },
